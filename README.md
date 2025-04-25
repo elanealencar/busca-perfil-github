@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# 🔍 Buscador de perfil do GitHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação feita em **React + TypeScript + TailwindCSS** que permite buscar usuários do GitHub e visualizar informações como nome, foto de perfil e bio, com base em um layout proposto no Figma.
 
-Currently, two official plugins are available:
+Projeto desenvolvido como parte de desafio técnico para um processo seletivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🔎 Busca de usuários pelo nome de usuário do GitHub
+- 👤 Exibição de nome, avatar e bio do perfil
+- ❌ Mensagem de erro personalizada caso o perfil não seja encontrado
+- 🎨 Layout estilizado com TailwindCSS conforme protótipo do Figma
+- ⏳ Indicação de carregamento durante a requisição
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📸 Preview
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Preview do projeto](src/assets/github_prewiew.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+## 🚀 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- API pública do [GitHub](https://api.github.com/users/{username})
+
+## 🛠️ Como rodar o projeto localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
+   ```
+
+2. Acesse o diretório:
+  ```bash
+  cd seu-repo
+  ```
+
+3. Instale as dependências:
+  ```bash
+  npm install
+  ```
+
+4. Rode o projeto:
+  ```bash
+  npm run dev
+  ```
+
+## 💡 Observação
+
+A API pública do GitHub possui limite de requisições não autenticadas. 
+Se estiver recebendo erro 403, aguarde um pouco e tente novamente.
+
+## 👩‍💻 Desenvolvido por 
+
+Elane Alencar [Linkedin](https://www.linkedin.com/in/elanealencar/)
