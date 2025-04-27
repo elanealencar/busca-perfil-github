@@ -4,6 +4,8 @@ Uma aplicação feita em **React + TypeScript + TailwindCSS** que permite buscar
 
 Projeto desenvolvido como parte de desafio técnico para um processo seletivo.
 
+Acesse aqui o projeto em funcionamento: [LINK](https://busca-perfil-github-elane-alencars-projects.vercel.app/)
+
 ## 🎯 Funcionalidades
 
 - 🔎 Busca de usuários pelo nome de usuário do GitHub
